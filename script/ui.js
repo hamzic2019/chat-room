@@ -20,6 +20,12 @@ class UI {
         }
         
         UIMessages.innerHTML += displayBlock;
+        const elemenati = document.getElementById(`${id}`);
+        elemenati.scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "nearest"
+        });
     }
 
     async removeElement(elementId){
