@@ -9,10 +9,10 @@ if (cookies === null || cookies === undefined) {
         username: u_nick,
         author: u_name
     }
+    localStorage.setItem('profile',JSON.stringify(localUserProfile));
 } else {
-    localUserProfile = cookies;
+    localUserProfile = JSON.parse(cookies);
 }
-
 
 
 
