@@ -45,6 +45,7 @@
 
 
             <div class="chat-messages">
+
                 <div class="chat-user-message">
                     <p class="message-paragraph"><span class="message">lorem I would love to ask you something lorem lorem</span></p>
                     <p class="message-author">Author: <span class="author">Haris Hamzic</span></p>
@@ -68,6 +69,31 @@
 
     </div>
 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDTS4w4L3K9dRGaLzsYaqeA0brSiTCgfBM",
+            authDomain: "task-manager-2860a.firebaseapp.com",
+            databaseURL: "https://task-manager-2860a.firebaseio.com",
+            projectId: "task-manager-2860a",
+            storageBucket: "task-manager-2860a.appspot.com",
+            messagingSenderId: "778245763853",
+            appId: "1:778245763853:web:6270646f5db44a838b7644"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+    <script src="script/backbone.js"></script>
+    <script src="script/ui.js"></script>
     <script src="script/app.js"></script>
 </body>
 </html>
