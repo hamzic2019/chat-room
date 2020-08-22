@@ -2,6 +2,8 @@
 let cookies = localStorage.getItem('profile');
 let localUserProfile;
 
+// COMMENT HERE MISSING
+
 if (cookies === null || cookies === undefined) {
     let u_name = prompt('Enter your name');
     let u_nick = prompt('Enter your username');
