@@ -29,25 +29,36 @@ let message;
 
 button.addEventListener('click', (e) => {
    input = form.value.trim();
-   message = {
-       message: input,
-       author: localUserProfile.author,
-       username: localUserProfile.username
+   if(input.length === 0 ||input === undefined || input === null){
+
+   }else {
+       message = {
+           message: input,
+           author: localUserProfile.author,
+           username: localUserProfile.username
+       }
+       backbone.sendMessage(message);
+       window.scrollTo(0, document.body.scrollHeight);
+       form.value = '';
    }
-   backbone.sendMessage(message);
-   form.value = '';
+   
 });
 
 form.addEventListener('keyup', (e) => {
     if(e.keyCode === 13) {
         input = form.value.trim();
-        message = {
-            message: input,
-            author: localUserProfile.author,
-            username: localUserProfile.username
+        if (input.length === 0 || input === undefined || input === null) {
+
+        } else {
+            	 message = {
+            	     message: input,
+            	     author: localUserProfile.author,
+            	     username: localUserProfile.username
+            	 }
+            	 backbone.sendMessage(message);
+            	 window.scrollTo(0, document.body.scrollHeight);
+            	 form.value = '';
         }
-        backbone.sendMessage(message);
-        form.value = '';
     }
 })
 
