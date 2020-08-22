@@ -165,3 +165,95 @@ COLOR FOR USER WHICH IS TYPING MESSAGE*/
     display:none; 
 }
 
+
+
+@media screen and (max-width: 992px) {
+    .chats-room {
+        display:none;
+    }
+
+    .chat {
+        width: 100%;
+    }
+
+    .application{
+        width: 95%;
+    }
+
+    .app-name {
+        font-size: 35px;
+    }
+    .inputMessage {
+        outline: none;
+        border: 0px;
+        padding: 5px 20px;
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .sendButton {
+        border: 0px;
+        background-color: white;
+        font-size: 25px;
+        font-weight: 900;
+        color: #279AF1;
+        outline: none;
+        padding: 0 10px;
+        min-width: 3%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .chats-room {
+        display: none;
+    }
+
+    .chat {
+        width: 100%;
+    }
+
+    .application {
+        height: 100vh;
+        width: 100%;
+        margin:0;
+    }
+
+    .app-name {
+        font-size: 25px;
+    }
+
+    .inputMessage {
+        outline: none;
+        border: 0px;
+        padding: 5px 20px;
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .sendButton {
+        border: 0px;
+        background-color: white;
+        font-size: 25px;
+        font-weight: 900;
+        color: #279AF1;
+        outline: none;
+        padding:0 10px;
+        min-width: 3%;
+    }
+
+    .chat-user-message {
+        background-color: #2C97DE;
+        width: 90%;
+        margin: 25px 25px 5px 25px;
+        padding: 5px;
+        border-radius: 10px;
+        font-family: 'Montserrat',sans-serif;
+        display: inline-block
+    }
+    .active-profile {
+        background-color: #2CBF6D;
+    }
+
+
+}
