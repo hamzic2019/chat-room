@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden!important;
+    background-color: #279AF1;
+}
+
+.application {
+    height: 95vh;
+    width: 85%;
+    margin:2.5vh auto;
+}
+
+.navigation {
+    width: 100%;
+    height:10vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:25px;
+    background-color: rgb(253, 253, 253);
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.app-name {
+    color:rgb(255, 255, 255);
+    font-size:50px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+    text-shadow: 0px 2px 6px black;
+}
+
+.chats-room {
+    float: left;
+    width: 30%;
+    height:85vh ;
+    overflow: scroll;
+    background-color: rgb(250, 250, 250);
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.room {
+    float:left;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom:1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.room p {
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+    font-size: 40px;
+    color:rgba(0, 0, 0, 0.493);
+    padding-left:25px;
+}
+
+.active {
+   background-color: rgba(230, 230, 230, 0.979);
+   border-right:0px solid rgb(255, 0, 0);
+    
+}
+
+.chat {
+    float: left;
+    width: 70%;
+    height:85vh;
+}
+
+.chat-messages {
+    float: left;
+    width: 100%;
+    height:75vh;
+    background-color: rgba(230, 230, 230, 0.979);
+    border-bottom:1px solid rgba(0, 0, 0, 0.05);
+    overflow: scroll;
+}
+
+.chat-area {
+    float: left;
+    width: 100%;
+    height:10vh;
+    background-color: rgba(255, 255, 255, 0.979);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.inputMessage {
+    flex-grow: 5;
+    outline: none;
+    border:0px;
+    padding:5px 20px;
+    font-size: 25px;
+}
+
+.sendButton {
+    flex-grow: 1;
+    border:0px;
+    background-color:white;
+    font-size: 25px;
+    font-weight: 900;
+    color:#279AF1;
+    outline: none;
+}
+.sendButton:active {
+    color:#2490e2;
+}
+
+.chat-user-message {
+    background-color:#2C97DE;
+    width: 70%;
+    margin:25px 25px 5px 25px;
+    padding:5px;
+    border-radius: 10px;
+    font-family: 'Montserrat',
+    sans-serif;
+    display: inline-block
+}
+
+
+/* HERE WE USE THIS ONLY TO CHANGE 
+COLOR FOR USER WHICH IS TYPING MESSAGE*/
+.active-profile {
+    background-color:#2CBF6D;
+}
+
+.message-paragraph {
+    /* background-color:red; */
+    padding:10px;
+    color:white;
+    font-size:20px;
+    font-weight: 200;
+    display: inline-block
+}
+
+.message-author{
+    /* background-color: blue; */
+    padding:10px;
+    height: 50px;
+    font-weight: 700;
+    border-top:1px solid rgba(0, 0, 0, 0.137);
+    color:white;
+}
+.message-author .author {
+    font-weight: 300;
+    font-size:20px;
+}
+
+/* SCROLLING DESIGN BAR */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    display:none; 
+}
+
